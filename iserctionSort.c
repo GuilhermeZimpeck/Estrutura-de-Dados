@@ -1,20 +1,19 @@
 #include <stdio.h>
 #define MAX 100
 
-void bubbleSort(int vetor[],int n){
+void inserctionSort(int vetor[],int n){
     int i, j, aux;
 
-    for(i = 0 ; i < n ; i++)
+    for(i = 1 ; i < n; i++)
     {
-        for(j = i+1 ; j < n ; j++)
+        aux = vetor[i];
+        j = i - 1;
+        while(j >= 0 && aux < vetor[j])
         {
-            if(vetor[i]>vetor[j])
-            {
-            aux = vetor[i];
-            vetor[i] = vetor[j];
-            vetor[j] = aux;
-            }
+            vetor[j+1] = vetor[j];
+            j--;
         }
+        vetor[j+1] = aux;
     }
     i = 0;
     while(i<n){
@@ -35,6 +34,6 @@ int main(){
     scanf("%d",&vetor[i]);
     i++;
     }
-    bubbleSort(vetor,qtd);
+    inserctionSort(vetor,qtd);
     return 0;
 }
