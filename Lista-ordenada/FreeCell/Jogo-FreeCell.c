@@ -19,9 +19,15 @@ typedef struct {
 } Pilha;
 
 //PILHA 
-void init(Pilha *p) { p->topo = -1; }
+void init(Pilha *p) 
+{ 
+    p->topo = -1; 
+}
 
-int vazia(Pilha *p) { return p->topo == -1; }
+int vazia(Pilha *p) 
+{ 
+    return p->topo == -1; 
+}
 
 Carta topo(Pilha *p) {
     if (!vazia(p)) return p->cartas[p->topo];
