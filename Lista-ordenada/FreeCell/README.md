@@ -32,3 +32,12 @@ encerrar.
 ```
 prompt> sair
 ```
+Para motivos visuais, as cartas possiem a seguinte aparencia :
+```
+ +-----+ +-----+ +-----+ +-----+
+ |  4  | |  7  | |  K  | |  9  |  --> Valor da carta
+ |  E  | |  P  | |  O  | |  C  |  --> Naipe
+ |  V  | |  P  | |  V  | |  P  |  --> Cor
+ +-----+ +-----+ +-----+ +-----+
+```
+Como o terminal não possui cores, a cor da carta é sinalizada na ultima linha podendo ser "V" para vermelho, ou "P" para preto.
