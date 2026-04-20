@@ -49,7 +49,7 @@ Carta pop(Pilha *p) {
 
 //UTIL
 int cor(Carta c) {
-    if (c.naipe == 'C' || c.naipe == 'P')
+    if (c.naipe == 'E' || c.naipe == 'P')
         return 0; // preto
     return 1; // vermelho
 }
